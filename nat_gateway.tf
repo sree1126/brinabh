@@ -1,6 +1,6 @@
 resource "aws_nat_gateway" "brinabh_public_nat" {
   allocation_id = aws_eip.brinabh_public_nat_eip.id
-  subnet_id     = aws_subnet.brinabh_public_subnet.id
+  subnet_id     = aws_subnet.brinabh_public_subnet_east-1a.id
 
   tags = {
     Name = "brinabh_public_nat"
